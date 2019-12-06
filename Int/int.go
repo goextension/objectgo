@@ -2,8 +2,10 @@ package Int
 
 import "github.com/goextension/objectgo"
 
-type Int = objectgo.Int
+func New(i int) objectgo.Int {
+	return objectgo.Int(i)
 
-func New(i int) Int {
-	return Int(i)
+}
+func toString(i objectgo.Int) objectgo.String {
+	return i.toString()
 }
