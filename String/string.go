@@ -4,8 +4,10 @@ import (
 	"github.com/goextension/objectgo"
 )
 
-type String = objectgo.String
-
-func New(s string) String {
+func New(s string) objectgo.String {
 	return String(s)
+}
+
+func String(s string) objectgo.String {
+	return objectgo.String(s)
 }
