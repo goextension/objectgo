@@ -11,3 +11,7 @@ func New(s string) objectgo.String {
 func String(s string) objectgo.String {
 	return objectgo.String(s)
 }
+
+func Int(i int) objectgo.String {
+	return String(objectgo.Int(i).String())
+}
